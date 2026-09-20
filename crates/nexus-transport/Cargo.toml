@@ -1,0 +1,8 @@
+[package]
+name = "nexus-transport"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+anyhow.workspace = true
+nexus-core = { path = "../nexus-core" }
