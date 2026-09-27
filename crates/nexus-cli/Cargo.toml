@@ -1,0 +1,23 @@
+[package]
+name = "nexus"
+version.workspace = true
+edition.workspace = true
+
+[[bin]]
+name = "nexus"
+path = "src/main.rs"
+
+[dependencies]
+anyhow.workspace = true
+clap.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+nexus-core = { path = "../nexus-core" }
+nexus-crypto = { path = "../nexus-crypto" }
+nexus-transport = { path = "../nexus-transport" }
+nexus-discovery = { path = "../nexus-discovery" }
+nexus-services = { path = "../nexus-services" }
+chrono.workspace = true
+hex.workspace = true
+rand.workspace = true
+dirs = "5"
